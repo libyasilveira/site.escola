@@ -30,7 +30,7 @@ body {
 
 .escola{
     background-image: linear-gradient(#ec68c5,#16CFF8);
-    color:white;
+    color:#7B68EE;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@ body {
 
 .estudante{
     text-align: center;
-    padding: 24px 0;
+    padding: 40px 0;
 }
 .estudante-imagem{
     width: 120px;
