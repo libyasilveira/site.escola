@@ -34,28 +34,30 @@ body {
 .escola {
     background-image: linear-gradient(#ec68c5, #16CFF8);
     color: #000000;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 80px 0;
 }
 
 .escola-imagem {
-    text-align: right;
-    width: 30%;
+    flex: 0 0 30%;
     max-width: 150px;
+    text-align: right;
+    padding-right: 20px;
 }
 
 .escola-div-conteudo {
-    width: 70%;
-    text-align: left;
+    flex: 1;
     max-width: 400px;
-    margin: 0 auto;
+    text-align: left;
 }
 
 .escola-titulo {
-    text-align: left;
     padding: 16px 0;
     font-size: 24px;
 }
+
 
 /* Estilos para a seção "Estudantes" */
 .estudante {
