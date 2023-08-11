@@ -75,24 +75,36 @@ body {
     cursor: pointer;
 }
 
+.cabecalho-lista {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+}
+
+.cabecalho-lista.active {
+    display: block;
+}
+
+.cabecalho-lista-item {
+    display: block;
+    margin: 10px 0;
+}
+
 @media screen and (max-width: 768px) {
     .cabecalho-lista {
         display: none;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background-color: #000;
-        text-align: center;
     }
 
     .cabecalho-lista.active {
         display: block;
     }
 
-    .cabecalho-lista-item {
+    .menu-toggle:checked + .cabecalho-lista {
         display: block;
-        margin: 10px 0;
     }
 
     .menu-toggle {
