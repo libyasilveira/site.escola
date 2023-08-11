@@ -1,0 +1,12 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = $_POST["nome"];
+    $email = $_POST["email"];
+    $mensagem = $_POST["mensagem"];
+    echo "Nome: $nome <br>";
+    echo "E-mail: $email <br>";
+    echo "Mensagem: $mensagem <br>";
+} else {
+    echo "Este arquivo deve ser acessado via POST.";
+}
+?>
