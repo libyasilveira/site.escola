@@ -95,16 +95,22 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .cabecalho-lista {
-        display: none;
-    }
-
     .cabecalho-lista.active {
         display: block;
     }
 
+    .cabecalho-lista-item {
+        display: block;
+        margin: 10px 0;
+    }
+
     .menu-toggle:checked + .cabecalho-lista {
         display: block;
+    }
+
+    .menu-toggle:checked ~ .escola,
+    .menu-toggle:checked ~ .estudante {
+        display: none;
     }
 
     .menu-toggle {
