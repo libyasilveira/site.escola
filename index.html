@@ -21,7 +21,111 @@
             <li class="cabecalho-lista-item"><a href="robot.html">Física 1</a></li>
             <li class="cabecalho-lista-item"><a href="biot.html">Biotecnologia</a></li>
         </ul>
-    </header>    
+    </header>  
+    <style>/* Mobile-first responsive styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .cabecalho {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+        
+        .cabecalho-imagem {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .cabecalho-lista {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+        
+        .cabecalho-lista-item {
+            margin: 0 1rem;
+        }
+        
+        .escola {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+        
+        .escola-imagem {
+            max-width: 100%;
+            height: auto;
+            margin-top: 2rem;
+        }
+        
+        .slideshow {
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 2rem 0;
+        }
+        
+        .slideshow h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .slideshow-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .slide {
+            flex: 0 0 100%;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+        
+        .slide img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        
+        .slide-text {
+            font-size: 1.2rem;
+        }
+        
+        /* Tablet and larger screens */
+        @media (min-width: 768px) {
+            .cabecalho-lista {
+                margin-left: auto;
+            }
+        
+            .escola {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+        
+            .escola-div-conteudo {
+                flex: 1;
+                padding-right: 2rem;
+            }
+        
+            .escola-imagem {
+                max-width: 50%;
+                margin-top: 0;
+            }
+        
+            .slide {
+                flex: 0 0 calc(33.33% - 2rem);
+                margin: 1rem;
+            }
+        }
+        </style>  
     <section class="escola">
         <div class="escola-div-conteudo">
             <h2 class="escola-titulo">Sobre a Escola</h2>
