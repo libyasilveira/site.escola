@@ -30,6 +30,43 @@
         </div>
         <img class="escola-imagem" src="https://www.cep.pr.gov.br/sites/cep/arquivos_restritos/files/imagem/2022-03/cep-fachada-jose-fernando-ogura-aen-660x372_1.jpg" alt="imagem que representa A ESCOLA">
     </section>
+    <section class="slideshow">
+        <h2>Trabalhos das Disciplinas</h2>
+        <div class="slideshow-container">
+            <div class="slide">
+                <img src="imagem_matematica1.jpg" alt="Trabalho Matemática 1">
+                <div class="slide-text">Trabalho de Matemática 1</div>
+            </div>
+            <div class="slide">
+                <img src="imagem_matematica2.jpg" alt="Trabalho Matemática 2">
+                <div class="slide-text">Trabalho de Matemática 2</div>
+            </div>
+            <div class="slide">
+                <img src="imagem_fisica1.jpg" alt="Trabalho Física 1">
+                <div class="slide-text">Trabalho de Física 1</div>
+            </div>
+            <div class="slide">
+                <img src="imagem_biotecnologia.jpg" alt="Trabalho Biotecnologia">
+                <div class="slide-text">Trabalho de Biotecnologia</div>
+            </div>
+        </div>
+    </section>
+
+<script>
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, idx) => {
+            slide.style.transform = `translateX(${(idx - index) * 100}%)`;
+        });
+    }
+
+    setInterval(() => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }, 3000);
+</script>
     <section class="estudante">
         <h2 class="estudante-titulo">Quem são nossos estudantes?</h2>
         <div class="estudante-todos"> 
@@ -80,42 +117,5 @@
             <button type="submit">Enviar</button>
         </form>
     </section>
-    <section class="slideshow">
-        <h2>Trabalhos das Disciplinas</h2>
-        <div class="slideshow-container">
-            <div class="slide">
-                <img src="imagem_matematica1.jpg" alt="Trabalho Matemática 1">
-                <div class="slide-text">Trabalho de Matemática 1</div>
-            </div>
-            <div class="slide">
-                <img src="imagem_matematica2.jpg" alt="Trabalho Matemática 2">
-                <div class="slide-text">Trabalho de Matemática 2</div>
-            </div>
-            <div class="slide">
-                <img src="imagem_fisica1.jpg" alt="Trabalho Física 1">
-                <div class="slide-text">Trabalho de Física 1</div>
-            </div>
-            <div class="slide">
-                <img src="imagem_biotecnologia.jpg" alt="Trabalho Biotecnologia">
-                <div class="slide-text">Trabalho de Biotecnologia</div>
-            </div>
-        </div>
-    </section>
-
-<script>
-    const slides = document.querySelectorAll('.slide');
-    let currentSlide = 0;
-
-    function showSlide(index) {
-        slides.forEach((slide, idx) => {
-            slide.style.transform = `translateX(${(idx - index) * 100}%)`;
-        });
-    }
-
-    setInterval(() => {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-    }, 3000);
-</script>
 </body>
 </html>
