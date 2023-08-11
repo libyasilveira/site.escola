@@ -155,7 +155,7 @@ body {
 /* Estilos para o menu hamburger */
 
 .cabeçalho {
-    background-color: var(--branco);
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -190,7 +190,7 @@ body {
 .lista-menu__link {
     background: white;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: black;
     background-clip: text;
     text-transform: uppercase;
 }
