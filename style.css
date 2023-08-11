@@ -39,17 +39,20 @@ body {
 }
 
 .escola-imagem {
+    text-align: right;
     width: 30%;
     max-width: 150px;
 }
 
 .escola-div-conteudo {
     width: 70%;
+    text-align: left;
     max-width: 400px;
     margin: 0 auto;
 }
 
 .escola-titulo {
+    text-align: left;
     padding: 16px 0;
     font-size: 24px;
 }
