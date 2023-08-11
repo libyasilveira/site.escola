@@ -32,40 +32,6 @@ body {
     font-size: 18px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
-}
-
-.cabecalho {
-    background-color: #000000;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px;
-}
-
-.cabecalho-imagem {
-    width: 10%;
-}
-
-.cabecalho-lista {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-}
-
-.cabecalho-lista-item {
-    font-size: 18px;
-}
-
 .disciplina {
     background-color: #ec68c5;
     color: #000000;
