@@ -35,13 +35,14 @@ body {
     background-image: linear-gradient(#ec68c5, #16CFF8);
     color: #000000;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    padding: 60px 0;
 }
 
 .escola-imagem {
-    flex: 0 0 60%;
+    flex: 0 0 40%;
     max-width: 300px;
     text-align: right;
     padding-right: 20px;
@@ -49,7 +50,7 @@ body {
 
 .escola-div-conteudo {
     flex: 1;
-    max-width: 200px;
+    max-width: 400px;
     text-align: left;
 }
 
@@ -62,24 +63,24 @@ body {
 /* Estilos para a seção "Estudantes" */
 .estudante {
     text-align: center;
-    padding: 40px 0;
+    padding: 60px 0;
 }
 
 .estudante-imagem {
-    width: 80px;
+    width: 100px;
     max-width: 100%;
 }
 
 .estudante-icone {
-    width: 20px;
-    max-width: 20px;
+    width: 24px;
+    max-width: 24px;
     padding: 4px 8px;
 }
 
 .estudante-todos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
     justify-items: center;
 }
 
