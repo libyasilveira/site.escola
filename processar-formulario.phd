@@ -4,9 +4,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $mensagem = $_POST["mensagem"];
 
-    echo "Nome: $nome <br>";
-    echo "E-mail: $email <br>";
-    echo "Mensagem: $mensagem <br>";
+    $to = "silveira.libia@escola.pr.gov.br"; // Substitua pelo seu endereço de email
+    $assunto = "Nova mensagem do formulário do site";
+    $mensagem_email = "Nome: $nome\n";
+    $mensagem_email .= "E-mail: $email\n";
+    $mensagem_email .= "Mensagem:\n$mensagem\n";
+
+    if (mail($to, $assunto, $mensagem_email)) {
+        echo "Mensagem enviada com sucesso!";
+    } else {
+        echo "Erro ao enviar a mensagem. Por favor, tente novamente mais tarde.";
+    }
 } else {
     echo "Este arquivo deve ser acessado via POST.";
 }
