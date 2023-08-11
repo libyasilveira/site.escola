@@ -50,6 +50,19 @@
         <button id="search-button">Buscar</button>
         </div>
     </header> 
+    <script>document.addEventListener('DOMContentLoaded', function () {
+        var searchInput = document.getElementById('search-input');
+        var searchButton = document.getElementById('search-button');
+      
+        searchButton.addEventListener('click', function () {
+          var searchTerm = searchInput.value;
+          // Aqui você pode adicionar a lógica para realizar a busca com o termo inserido.
+          // Por exemplo, redirecionar para uma página de resultados de busca.
+          window.location.href = '/resultados-de-busca?term=' + searchTerm;
+          console.log('Termo de busca:', searchTerm);
+        });
+      });
+    </script>
     <script> document.addEventListener('DOMContentLoaded', function () {
         var menuToggle = document.getElementById('menu-toggle');
         var menu = document.querySelector('.menu');
