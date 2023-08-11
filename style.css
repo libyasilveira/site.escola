@@ -125,7 +125,8 @@ body {
 
 .slideshow-container {
     display: flex;
-    overflow: hidden;
+    flex-wrap: nowrap; /* Prevent wrapping to keep images side by side */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
 }
 
 .slide {
@@ -137,7 +138,7 @@ body {
     background-color: #ec68c5;
     color: #000000;
     border-radius: 60px;
-    padding: 40px;
+    padding: 0 40px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -148,8 +149,3 @@ body {
     border-radius: 5px;
 }
 
-.slide-text {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #777777;
-}
