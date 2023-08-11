@@ -70,6 +70,8 @@ body {
 #estudante-todos {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+    padding: 1em;
+    background-color: white;
 }
 
 /* Estilos para o formulário */
