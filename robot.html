@@ -14,25 +14,60 @@
     <header class="cabecalho">
         <img class="cabecalho-imagem" src="https://www.cep.pr.gov.br/sites/cep/arquivos_restritos/files/imagem/2020-02/logonova.png">
         <ul class="cabecalho-lista">
-            <li class="cabecalho-lista-item">Escola</li>
-            <li class="cabecalho-lista-item">Estudante</li>
+            <li class="cabecalho-lista-item"><a href="index.html">Página Inicial</a></li>
+            <li class="cabecalho-lista-item"><a href="matematica.html">Matemática 2</a></li>
+            <li class="cabecalho-lista-item"><a href="biot.html">Biotecnologia</a></li>
+            <li class="cabecalho-lista-item"><a href="mate.html">Matemática 1</a></li>
         </ul>
+        <style>
+            .disciplina {
+                background-color: #ec68c5;
+                color: #000000;
+                padding: 120px 0;
+                text-align: center;
+            }
+            
+            .trabalho {
+                background-color: #ffffff;
+                border-radius: 60px;
+                padding: 150px;
+                margin: 100px auto;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+        
     </header>
     
     <section class="disciplina">
         <h2 class="disciplina-titulo">Física 1</h2>
         <div class="trabalho">
             <h3 class="trabalho-titulo">Trabalho 1</h3>
-            <p class="trabalho-descricao">Esse trabalho trata-se de uma atividade da matéria de Matemática 2...</p>
+            <p class="trabalho-descricao">Esse trabalho trata-se de uma atividade da matéria de Física 1...</p>
         </div>
         <div class="trabalho">
             <h3 class="trabalho-titulo">Trabalho 2</h3>
-            <p class="trabalho-descricao">Esse trabalho trata-se de uma atividade da matéria de Matemática 2...</p>
+            <p class="trabalho-descricao">Esse trabalho trata-se de uma atividade da matéria de Física 1...</p>
         </div>
         <div class="trabalho">
             <h3 class="trabalho-titulo">Trabalho 3</h3>
-            <p class="trabalho-descricao">Esse trabalho trata-se de uma atividade da matéria de Matemática 2...</p>
+            <p class="trabalho-descricao">Esse trabalho trata-se de uma atividade da matéria de Física 1...</p>
         </div>
+    </section>
+    <!-- Formulário -->
+    <section class="formulario">
+        <h2>Professor(a), poderá entrar em contato conosco através desse formulário!</h2>
+        <form action="processar-formulario.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
     </section>
 </body>
 </html>
