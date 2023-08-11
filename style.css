@@ -201,3 +201,30 @@ body {
       z-index: 1;
     }
   }  
+  /* Estilos para a barra de pesquisa */
+.search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  #search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 200px;
+  }
+  
+  #search-button {
+    padding: 8px 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #search-button:hover {
+    background-color: #555;
+  }
+  
