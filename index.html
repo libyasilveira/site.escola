@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colégio Estadual do Paraná - trabalho</title>
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -14,26 +14,30 @@
 <header class="cabecalho">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <img class="cabecalho-imagem" src="https://www.cep.pr.gov.br/sites/cep/arquivos_restritos/files/imagem/2020-02/logonova.png">
-    <div class="menu-hamburger" id="menuHamburger">
-        <div class="linha"></div>
-        <div class="linha"></div>
-        <div class="linha"></div>
-    </div>
-<label class="menu-btn" for="menu-toggle">
-  <span class="bar"></span>
-    <ul class="cabecalho-lista" id="menuLista">
-        <li class="cabecalho-lista-item">Disciplinas
-            <ul class="sub-menu">
-                <li class="cabecalho-lista-item"></li><a href="matematica.html">Matemática 2</a></li>
-                <li class="cabecalho-lista-item"><a href="mate.html">Matemática 1</a></li>
-                <li class="cabecalho-lista-item"><a href="robot.html">Física 1</a></li>
-                <li class="cabecalho-lista-item"><a href="biot.html">Biotecnologia</a></li>
-            </ul>
+    div class="container">
+    <input type="checkbox" id="menu" class="container__botao">
+    <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+    </label>
+    <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Programação</a>
+        </li>
+        <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Front-end</a>
+        </li>
+        <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Infraestrutura</a>
+        </li>
+        <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Business</a>
+        </li>
+        <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Design & UX</a>
         </li>
     </ul>
-    <input type="checkbox" id="menu-toggle">
-
-</label>
+</div>
 
 <nav class="menu">
   <ul>
@@ -102,7 +106,7 @@
         .escola {
             display: flex;
             flex-direction: column;
-            align-items: center;0
+            align-items: center;
             padding: 2rem;
         }
         
