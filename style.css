@@ -134,6 +134,11 @@ body {
     text-align: center;
     margin-right: 20px;
     transition: transform 0.5s ease-in-out;
+    background-color: #ec68c5;
+    color: #000000;
+    border-radius: 60px;
+    padding: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .slide img {
@@ -146,4 +151,5 @@ body {
 .slide-text {
     margin-top: 10px;
     font-size: 16px;
+    color: #777777;
 }
