@@ -112,3 +112,38 @@ body {
 .formulario button:hover {
     background-color: #333333;
 }
+
+.slideshow {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.slideshow h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.slideshow-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 300px;
+    text-align: center;
+    margin-right: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.slide-text {
+    margin-top: 10px;
+    font-size: 16px;
+}
