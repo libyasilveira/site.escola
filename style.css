@@ -39,12 +39,12 @@ body {
 }
 
 .escola-imagem {
-    width: 20%;
+    width: 30%;
     max-width: 150px;
 }
 
 .escola-div-conteudo {
-    width: 80%;
+    width: 70%;
     max-width: 400px;
     margin: 0 auto;
 }
