@@ -197,6 +197,7 @@ body {
     background-clip: text;
     text-transform: uppercase;
     text-decoration: none;
+    width: 20;
 }
 
 .container__botao {
