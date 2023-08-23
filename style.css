@@ -187,6 +187,7 @@ body {
 .lista-menu__item {
     padding: 1em;
     background-color: white;
+    display: inherit;
 }
 
 
