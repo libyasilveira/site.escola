@@ -191,7 +191,7 @@ body {
 
 
 .lista-menu__link {
-    background: white;
+    background: #000000;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgb(255, 255, 255);
     background-clip: text;
