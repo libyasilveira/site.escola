@@ -40,6 +40,28 @@
             box-shadow: 3px 3px 0 gray;
             cursor: pointer;
         }
+
+            .teclado {
+                background-color: aquamarine;
+                display: grid;
+                gap: 10px;
+                grid-template-columns: repeat(3,1fr);
+                padding: 10px;
+            }
+            .tecla {
+                background-color: blueviolet;
+                color: black;
+                padding: 30px;
+            }
+
+            .tecla.ativa,
+            .tecla:active {background-color: #ec68c5; color: #ffffff; outline: none;}
+            .tecla.focus,
+            .tecla:focus {outline: none; box-shadow: 1px 1px 10px #000000;}
+            .tecla.active:focus, 
+            .tecla.active:focus{
+                box-shadow: 3px 3px 0 #ffffff;
+            }
         </style>
         
     </header>
