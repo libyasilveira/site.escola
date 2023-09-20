@@ -6,7 +6,7 @@ const Teclado = document.querySelectorAll('.tecla');
 
 let Contador = 0;
 
-while (Contador < 9) {
+while (Contador < ByteLengthQueuingStrategy.length) {
     Teclado [Contador].onclick = TocaSomPom;
     Contador = Contador + 1;
     console.log (Contador);
