@@ -5,10 +5,10 @@ function TocaSomPom (idElementoAudio) {
 const Teclado = document.querySelectorAll('.tecla');
 
 let Contador = 0;
-const classe = lista[Contador].classList[1];
+const classe = Teclado[Contador].classList[1];
 console.log(classe);
 
-while (Contador < lista.length) {
+while (Contador < Teclado.length) {
     Teclado [Contador].onclick = function () {
         tocar ('#som_tecla_tom');
     }
