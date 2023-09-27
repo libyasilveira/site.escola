@@ -7,7 +7,8 @@ const Teclado = document.querySelectorAll('.tecla');
 let Contador = 0;
 
 while (Contador < Teclado.length) {
-    const classe = Teclado[Contador].classList[1];
+    const tecla = Teclado[Contador];
+    const classe = tecla.classList[1];
   //  console.log(classe);
     const idAudio =`#som_${classe}`;
   //   console.log(idAudio);
@@ -17,12 +18,12 @@ while (Contador < Teclado.length) {
 
     Contador = Contador + 1;
    // console.log (Contador);
-   Teclado.onkeydown = function (evento){
-    Teclado.classList.add('ativa');
+   tecla.onkeydown = function (evento){
+    tecla.classList.add('ativa');
      console.log(evento.code);
    }
-   Teclado.onkeyup = function () {
-    Teclado.classList.remove('ativa');
+   tecla.onkeyup = function () {
+    tecla.classList.remove('ativa');
    } 
 
 }
