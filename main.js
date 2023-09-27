@@ -11,18 +11,18 @@ while (Contador < Teclado.length) {
   //  console.log(classe);
     const idAudio =`#som_${classe}`;
   //   console.log(idAudio);
-    Teclado[Contador].onclick = function () {
+    Teclado.onclick = function () {
         TocaSomPom(idAudio);
     }
 
     Contador = Contador + 1;
    // console.log (Contador);
-   Teclado.onkeydown = function(evento){
+   Teclado.onkeydown = function (evento){
     Teclado.classList.add('ativa');
      console.log(evento.code);
    }
-   Teclado.onkeyup = function(){
+   Teclado.onkeyup = function () {
     Teclado.classList.remove('ativa');
-   }
+   } 
 
 }
