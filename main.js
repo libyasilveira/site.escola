@@ -12,7 +12,7 @@ while (Contador < Teclado.length) {
   //  console.log(classe);
     const idAudio =`#som_${classe}`;
   //   console.log(idAudio);
-    Teclado.onclick = function () {
+    tecla.onclick = function () {
         TocaSomPom(idAudio);
     }
 
