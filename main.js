@@ -8,10 +8,14 @@ let Contador = 0;
 
 while (Contador < Teclado.length) {
     Teclado [Contador].onclick = function () {
-        tocar ('#som_tecla_tom');
+        tocar (idAudio);
     }
+
     const classe = Teclado[Contador].classList[1];
 console.log(classe);
+const idAudio =`#som_${classe}`;
+ console.log(idAudio);
+//'#som_{classe}'
 
     Contador = Contador + 1;
     console.log (Contador);
