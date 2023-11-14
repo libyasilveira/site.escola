@@ -22,7 +22,7 @@ while (Contador < Teclado.length) {
       console.log(evento.code === 'Space' || evento.code === 'Enter');
   }
 
-  tecla.onkeyup = function () {
+  tecla.onkeyup = function (evento) {
       this.classList.remove('ativa');
   }
 }
