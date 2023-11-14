@@ -25,3 +25,4 @@ while (Contador < Teclado.length) {
   tecla.onkeyup = function (evento) {
       this.classList.remove('ativa');
   }
+}
