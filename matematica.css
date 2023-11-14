@@ -4,6 +4,29 @@
     padding: 120px 0;
     text-align: center;
 }
+.cabecalho {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px 0;
+    position: relative;
+}
+
+.cabecalho-imagem {
+    width: 5%;
+}
+
+.cabecalho-lista-item {
+    display: inline-block;
+    margin: 0 16px;
+    font-size: 16px;
+}
+
+.escola-imagem {
+    width: 25%;
+}
 
 .trabalho {
     background-color: #ffffff;
@@ -136,7 +159,7 @@ font-weight: 300;
 line-height: 1.3;
 }
 
-header {
+.container {
 align-items: center;
 background-image: linear-gradient(236deg, #74ebd5, #acb6e5);
 display: flex;
