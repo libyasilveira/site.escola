@@ -41,6 +41,82 @@ border-radius: 30px;
 box-shadow: 3px 3px 0 gray;
 cursor: pointer;
 }
+.formulario {
+    background-color: #7ba6f5;
+    padding: 40px;
+    text-align: center;
+}
+
+.formulario h2 {
+    margin-bottom: 24px;
+    color: #000000;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.formulario button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario button:hover {
+    background-color: #333333;
+}
+
+.slideshow {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.slideshow h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.slideshow-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 300px;
+    text-align: center;
+    margin-right: 20px;
+    transition: transform 0.5s ease-in-out;
+    background-color: #ec68c5;
+    color: #000000;
+    border-radius: 60px;
+    padding: 0 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
 
 .teclado {
     background-color: aquamarine;
